@@ -15,7 +15,8 @@ importers:
       '@nuxtjs/eslint-config-typescript': ^12.0.0
       '@rollup/plugin-graphql': ^2.0.3
       '@types/node': ^18.15.3
-      '@vue/apollo-composable': 4.0.0-beta.4
+      '@vue/apollo-composable': 4.0.0-beta.8
+      '@vue/apollo-option': 4.0.0-beta.5
       defu: ^6.1.2
       destr: ^1.2.2
       eslint: ^8.36.0
@@ -29,7 +30,8 @@ importers:
       '@apollo/client': 3.7.10_yzlhyovlzlmthkil2exlte7emy
       '@nuxt/kit': 3.3.1
       '@rollup/plugin-graphql': 2.0.3_graphql@16.6.0
-      '@vue/apollo-composable': 4.0.0-beta.4_ln2d5caovca7u46kpv26o6jc3i
+      '@vue/apollo-composable': 4.0.0-beta.8_ln2d5caovca7u46kpv26o6jc3i
+      '@vue/apollo-option': 4.0.0-beta.5_@apollo+client@3.7.10
       defu: 6.1.2
       destr: 1.2.2
       graphql: 16.6.0
@@ -1899,8 +1901,8 @@ packages:
       vue: 3.2.47
     dev: true
 
-  /@vue/apollo-composable/4.0.0-beta.4_ln2d5caovca7u46kpv26o6jc3i:
-    resolution: {integrity: sha512-lErWL+9LGfWfdfrSYY3DQB/A8Asqs46MiKwmgKeKSj7fe01tx0UpH43aiwMGj+VgEzBZ9AfqEa/Bxf0Nff/NNw==}
+  /@vue/apollo-composable/4.0.0-beta.8_ln2d5caovca7u46kpv26o6jc3i:
+    resolution: {integrity: sha512-njoXHgeUtAJxs2feSGkTCdqgBjopqUGIdsepYHI8OkniGSWUiYrQL/j395EJx4Umxtbc7ez+TbcJCAa7zjLIEQ==}
     peerDependencies:
       '@apollo/client': ^3.4.13
       '@vue/composition-api': ^1.0.0
@@ -1917,6 +1919,16 @@ packages:
       vue-demi: 0.13.11
     transitivePeerDependencies:
       - typescript
+    dev: false
+
+  /@vue/apollo-option/4.0.0-beta.5_@apollo+client@3.7.10:
+    resolution: {integrity: sha512-1bDkF8yzhQ2Hm0CQLve20L4ynIrsxlUilqg1ufcr17IQLlIsjY+fbBfzAljD8dH2iuyRrul/FtTHOeg3tC05PQ==}
+    peerDependencies:
+      '@apollo/client': ^3.2.1
+      vue: ^3.1.0
+    dependencies:
+      '@apollo/client': 3.7.10_yzlhyovlzlmthkil2exlte7emy
+      throttle-debounce: 3.0.1
     dev: false
 
   /@vue/babel-helper-vue-transform-on/1.0.2:
